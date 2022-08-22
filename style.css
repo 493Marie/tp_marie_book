@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@font-face {
+    font-family: "Silkscreen" ;
+    src: url(font/Silkscreen/Silkscreen-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace, Arial, sans-serif ;
+    text-align: center;
+}
+
+
+/*Général*/
+h1, h2{
+    font-family: "Silkscreen", Arial, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+/*Header*/
+header{
+    height: 50%;
+    background-color: black;
+    color: white;
+}
+
+header hgroup{
+    padding: 5% 25%;
+}
+
+header h1, header h2{
+    padding: 2%;
+    margin: 6%;
+}
+
+header h1{
+    border: solid white;
+}
+
+header .bouton{
+    background-color: chocolate;
+    border-radius: 50px;
+    padding: 1% 2%;
+    margin: 5% 20%;
+}
+
+/*Main*/
+main{
+    margin: 0 10%;
+}
+
+main .bouton{
+    background-color: chocolate;
+    border-radius: 50px;
+    padding: 1% 2%;
+    margin: 4% 30%;
+}
+
+h1{
+    margin: 4%;
+}
+
+main a{
+    color: white;
+    text-decoration: none;
+}
+
+main a :hover{
+    color: black;
+}
+
+
+/*Flex images*/
+.flex1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zone30{
+    width: 31% ;
+    margin: 0 1%;
+}
+
+/*Grid*/
+#grid img{
+    width: 100%;
+    padding: 2%;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas:
+    "tigre ulivo affiche_tron"
+    "french_burger_1 french_burger_2 bouteille_découpée"
+    "affiche_japon the_good_shoes affiche_us";
+}
+
+#grid #tigre{
+    grid-area: tigre;
+}
+
+#grid #ulivo{
+    grid-area: ulivo;
+}
+
+#grid #affiche_tron{
+    grid-area: affiche_tron;
+}
+
+#grid #french_burger_1{
+    grid-area: french_burger_1;
+}
+
+#grid #french_burger_2{
+    grid-area: french_burger_2
+    ;
+}
+
+#grid #bouteille_découpée{
+    grid-area: bouteille_découpée;
+}
+
+#grid #affiche_japon{
+    grid-area: affiche_japon;
+}
+
+#grid #the_good_shoes{
+    grid-area: the_good_shoes;
+}
+
+#grid #affiche_us{
+    grid-area: affiche_us;
+}
+
+/*Contacts*/
+form input, form label, form textarea{
+    display: block;
+    position: relative;
+    padding: 1%;
+}
+
+form input, form textarea{
+    margin: 0 43%;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+footer a{
+    font-size: 20px;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: chocolate;
+}
+
+/*Responsive*/
+@media (max-width: 500px){
+    .flex1{
+        flex-direction: column-reverse;
+        align-content: space-around;
+    }
+
+    .zone30{
+        width: 100%;
+    }
+
+    #grid{
+        display: inherit;
+    }
+
+    header .bouton{
+        margin: 5 -16%;
+    }
+
+    .bouton{
+        margin: 4% 16%;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    form input, form textarea{
+        margin: 0 20%;
+    }
+}

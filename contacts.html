@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Je suis Marie</h1>
+            <h2 class="bouton">Bienvenue sur mon book!</h2>
+        </hgroup>
+    </header>
+
+    <main>
+        <h1>Me contacter</h1>
+    
+            <form action="" method="post">
+                <label for="nom">Nom et prénom <span style="color: chocolate;">*</span></label>
+                <input required type="text" name="nom" id="nom">
+                <label for="email">Votre adresse email <span style="color: chocolate;">*</span></label>
+                <input required type="email" name="email" id="email">
+                <label for="telephone">Votre numéro de téléphone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Mettez votre indicatif de pays si besoin">
+                <label for="sujet">Sujet de votre message</label>
+               <select name="sujet" id="sujet">
+                <option value="" disabled selected>-- Choisissez votre sujet --</option>
+                <option value="diffusions">Diffuser les oeuvres</option>
+                <option value="partenariat">Faire un partenariat</option>
+                <option value="commander">Commander un projet</option>
+                <option value="autre">Autre demande</option>
+               </select>
+                <label for="message">Votre message</label>
+                <input type="text" name="message" id="message">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Supprimer">
+            </form>
+
+        <article>
+            <a href="index.html"><h2 class="bouton">Revenir à l'accueil</h2></a>
+            <a href="portfolio.html"><h2 class="bouton">Regarder mes projets</h2></a>
+        </article>   
+    </main>
+
+    <footer>
+        <h2>Marie, Webd23, Formation Philliance, 2022</h2>
+    </footer>
+</body>
+</html>

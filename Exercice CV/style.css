@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*font*/
+@font-face {
+    font-family: "Retro Gaming" ;
+    src: url(font/Retro\ Gaming.ttf);
+}
+@font-face {
+    font-family: "Lucida Console Normal";
+    src: url(font/lucon.ttf);
+}
+.font1{
+    font-family: "Retro Gaming", Arial, sans-serif;
+}
+body{
+    font-family: "Lucida Console Normal", Arial, sans-serif;
+}
+
+/*flex*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.flex4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.zone30{
+    width: 30%;
+    background-color: black;
+    color: white;
+}
+.zone30-2{
+    width: 30%;
+    text-align: left;
+}
+.zone70{
+    width: 70%;
+    background-color: white;
+    color: black;
+}
+.zone70-2{
+    width: 70%;
+}
+#header{
+    flex-direction: row-reverse;
+}
+
+/*globale*/
+.padding2{
+    padding: 2%;
+}
+.padding1{
+    padding: 1%;
+}
+.bandeblanche{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.borderbottom{
+    border-bottom: 2px solid chocolate;
+    margin: 1%;
+}
+
+main .zone70 .flex2 .zone30-2 .ronds{
+    color: chocolate;
+}
+
+/*header*/
+#prenom-nom{
+    font-size: 50px;
+}
+hgroup span{
+    color: chocolate;
+}
+header div img{
+    border-radius: 100%;
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+    padding: 5%;
+}
+
+/*main*/
+.nolist{
+    list-style: none;
+}
+section div li a{
+    text-decoration: none;
+    color: white;
+}
+#siteweb{
+    color: chocolate;
+}
+#telephone{
+    color: chocolate;
+}
+#email{
+    color: chocolate
+}
+#formation{
+    color: chocolate;
+}
+#experience{
+    color: chocolate;
+}
+
+/*footer*/
+#interets{
+    text-align: center;
+    padding: 2%;
+    color: chocolate;  
+}
+.cercleblanc{
+    border: 2px solid chocolate;
+    border-radius: 100%;
+    display: inline-block;
+    margin: auto;    
+}
+
+#recommandation{
+    color: chocolate;
+}
+
+.centrage{
+    text-align: center;
+}
+
+/*a compléter*/
+.justification{
+    text-align: right justify;
+}
+
+/*responsive*
+800 max
+500 max
+taille globale du texte, h1,h2,h3,li,icones*/
+
+@media (max-width: 1024px) {
+    .flex{
+        display: inherit;
+    }
+    .flex2{
+        display: inherit;
+    }
+    .flex3{
+        display: inherit;
+    }
+    .flex4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*photo*/
+    .flex .zone30 img{
+        width: 40%;
+        margin: 0 30%;
+    }
+
+    header .zone30, main .zone30, footer .zone30, body footer .zone70, body footer .zone70 .flex3 .zone30-2{
+        width: 100%;
+    }
+
+    /*Correction date actuel*/
+    main .zone70 .flex2 .zone30-2{
+        width: 37%;
+    }
+
+    /*centrage info perso et compétences*/
+    body .flex .zone30 div{
+        text-align: center;
+    }
+
+    /*marges textes formations et expériences*/
+    .flex .zone70{
+        text-align: center;
+        width: 100%;
+        padding: 0 2%;
+    }
+    /*textes formations et expériences*/
+    body main .zone70 .flex2 .zone70-2{
+        width: 100%;
+        text-align: left;
+    }
+
+    /*icones*/
+    #siteweb, #telephone, #email, #formation, #experience, #recommandation, #interets{
+        font-size: x-large;
+    }
+
+    /*correction centrage recommandation*/
+    footer .zone70 h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    body{
+        font-size: 90%;
+    }
+
+    /*icones*/
+    #siteweb, #telephone, #email, #formation, #experience, #recommandation, #interets{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .flex .zone70{
+        text-align: center;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    body{
+        font-size: 80%;
+    }
+
+    /*icones*/
+    #siteweb, #telephone, #email, #formation, #experience, #recommandation, #interets{
+        font-size: small;
+    }
+}
